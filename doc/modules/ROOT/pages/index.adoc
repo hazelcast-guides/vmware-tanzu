@@ -143,3 +143,8 @@ NOTE: You can create Hazelcast IMDG cluster without Management Center via follow
 [source,bash]
     $ cf domains | grep -i apps.*.cf-app.com | awk '{ print $1 }'
 
+== What’s more?
+
+You can check other use cases for the tile like _WAN Replication_, _Rolling Upgrade_ at https://docs.pivotal.io/partners/hazelcast/using.html[official documantation].
+
+
