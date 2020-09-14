@@ -10,7 +10,7 @@ jobs:
   antora:
     runs-on: ubuntu-18.04
     steps:
-      - uses: actions/checkout@v2.3.1
+      - uses: actions/checkout@v2.3.2
         with:
           repository: hazelcast-guides/guides-site
           ref: master
@@ -24,8 +24,7 @@ jobs:
           sudo npm i -g @antora/cli@2.3 @antora/site-generator-default@2.3
       - name: Build website artifacts
         run: |
-          antora --clean --fetch --to-dir ./docs antora-playbook.yml
-          touch docs/.nojekyll
+          sh create.sh
       - name: Commit artifacts changes
         run: |
           git config --global user.name 'devOpsHazelcast'
