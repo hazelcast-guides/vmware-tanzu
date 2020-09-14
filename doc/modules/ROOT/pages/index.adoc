@@ -11,9 +11,10 @@ include::{templates-url}/link-to-repo.adoc[]
 == What You’ll Learn
 
 In this guide, you'll learn how to:
-- install and configure _Hazelcast IMDG Enterprise_ tile at _VMware Tanzu Application Service(TAS)_.
-- create _Hazelcast IMDG Enterprise_ cluster via service instances at TAS.
-- run client application to put/get some data to/from map at the cluster.
+
+- Install and configure _Hazelcast IMDG Enterprise_ tile at _VMware Tanzu Application Service(TAS)_.
+- Create _Hazelcast IMDG Enterprise_ cluster via service instances at TAS.
+- Run client application to put/get some data to/from map at the cluster.
 
 == Prerequisites
 
