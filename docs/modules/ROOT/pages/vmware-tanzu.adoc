@@ -4,7 +4,6 @@
 :page-product: imdg
 :page-categories: Caching, Spring Boot
 :page-lang: java
-:page-edition: enterprise
 :page-enterprise: true
 :page-est-time: 30 mins
 :framework: VMware Tanzu Application Service
