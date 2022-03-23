@@ -1,24 +1,25 @@
-:github-address: https://github.com/hazelcast-guides/vmware-tanzu
-:hazelcast: Hazelcast IMDG
+= Get Started with Hazelcast Enterprise for VMware Tanzu
 :templates-url: templates:ROOT:page$/
+:page-layout: tutorial
+:page-product: imdg
+:page-categories: Caching, Spring Boot
+:page-lang: java
+:page-edition: enterprise
+:page-enterprise: true
+:page-est-time: 30 mins
 :framework: VMware Tanzu Application Service
-= Getting Started with Hazelcast Enterprise IMDG for VMware Tanzu
-
-This guide will get you started to use Hazelcast IMDG Enterprise at VMware Tanzu Application Service(TAS).
-
-include::{templates-url}/link-to-repo.adoc[]
+:description: This tutorial will get you started with Hazelcast Enterprise for VMware Tanzu Application Service(TAS) by installing Hazelcast, creating a cluster, and running a client.
 
 == What You’ll Learn
 
-In this guide, you'll learn how to:
+In this tutorial, you'll learn how to:
 
 - Install and configure _Hazelcast IMDG Enterprise_ tile at _VMware Tanzu Application Service(TAS)_.
 - Create _Hazelcast IMDG Enterprise_ cluster via service instances at TAS.
 - Run client application to put/get some data to/from map at the cluster.
 
-== Prerequisites
+== Before you Begin
 
-- approximately 30 minutes
 - https://docs.cloudfoundry.org/cf-cli/[cf cli]
 - VMware Tanzu Application Service and Ops Manager environments
 - Git
@@ -144,7 +145,7 @@ NOTE: You can create Hazelcast IMDG cluster without Management Center via follow
 [source,bash]
     $ cf domains | grep -i apps.*.cf-app.com | awk '{ print $1 }'
 
-== What’s more?
+== See Also
 
 You can check other use cases for the tile like _WAN Replication_, _Rolling Upgrade_ at https://docs.pivotal.io/partners/hazelcast/using.html[official documantation].
 
