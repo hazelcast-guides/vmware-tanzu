@@ -146,6 +146,6 @@ NOTE: You can create Hazelcast IMDG cluster without Management Center via follow
 
 == See Also
 
-You can check other use cases for the tile like _WAN Replication_, _Rolling Upgrade_ at https://docs.pivotal.io/partners/hazelcast/using.html[official documantation].
+You can check other use cases for the tile like _WAN Replication_, _Rolling Upgrade_ at https://docs.pivotal.io/partners/hazelcast/using.html[official documentation].
 
 
