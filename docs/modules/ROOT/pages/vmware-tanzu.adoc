@@ -1,31 +1,31 @@
-:github-address: https://github.com/hazelcast-guides/vmware-tanzu
-:hazelcast: Hazelcast IMDG
+= Get Started with Hazelcast Enterprise in VMware Tanzu
 :templates-url: templates:ROOT:page$/
+:page-layout: tutorial
+:page-product: imdg
+:page-categories: Caching, Spring Boot, Cloud Native
+:page-lang: java
+:page-enterprise: true
+:page-est-time: 30 mins
 :framework: VMware Tanzu Application Service
-= Getting Started with Hazelcast Enterprise IMDG for VMware Tanzu
-
-This guide will get you started to use Hazelcast IMDG Enterprise at VMware Tanzu Application Service(TAS).
-
-include::{templates-url}/link-to-repo.adoc[]
+:description: Install Hazelcast Enterprise in VMware Tanzu Application Service(TAS), create a cluster, and run a client.
 
 == What You’ll Learn
 
-In this guide, you'll learn how to:
+In this tutorial, you'll learn how to:
 
-- Install and configure _Hazelcast IMDG Enterprise_ tile at _VMware Tanzu Application Service(TAS)_.
-- Create _Hazelcast IMDG Enterprise_ cluster via service instances at TAS.
-- Run client application to put/get some data to/from map at the cluster.
+- Install and configure the *Hazelcast IMDG Enterprise* tile in VMware Tanzu Application Service(TAS).
+- Create a Hazelcast IMDG Enterprise cluster via service instances in TAS.
+- Use a client application to add some data to a map in the Hazelcast cluster.
 
-== Prerequisites
+== Before you Begin
 
-- approximately 30 minutes
 - https://docs.cloudfoundry.org/cf-cli/[cf cli]
 - VMware Tanzu Application Service and Ops Manager environments
 - Git
 - JDK 1.8+
 - Apache Maven 3.2+
 
-== Installing and Configuring Hazelcast IMDG Enterprise for VMware Tanzu
+== Step 1. Install and Configure Hazelcast IMDG Enterprise for VMware Tanzu
 
 Complete the following steps to download and install the Hazelcast IMDG Enterprise for VMware Tanzu tile on Ops Manager.
 
@@ -88,7 +88,7 @@ image:resource_config.png[]
 
 . Return to the Ops Manager Installation Dashboard and click **Apply Changes** to complete the installation of Hazelcast IMDG Enterprise for VMware Tanzu. Installation porcess takes 15 minutes approximately.
 
-== Using Hazelcast IMDG Enterprise for VMware Tanzu
+== Step 2. Use Hazelcast IMDG Enterprise for VMware Tanzu
 
 After your VMware Tanzu operator installs the Hazelcast IMDG Enterprise for VMware Tanzu tile, it automatically registers itself to the Marketplace.
 
@@ -144,7 +144,7 @@ NOTE: You can create Hazelcast IMDG cluster without Management Center via follow
 [source,bash]
     $ cf domains | grep -i apps.*.cf-app.com | awk '{ print $1 }'
 
-== What’s more?
+== See Also
 
 You can check other use cases for the tile like _WAN Replication_, _Rolling Upgrade_ at https://docs.pivotal.io/partners/hazelcast/using.html[official documentation].
 
